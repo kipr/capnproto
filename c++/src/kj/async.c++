@@ -1910,6 +1910,10 @@ void WaitScope::cancelAllDetached() {
   }
 }
 
+EventLoop &WaitScope::getLoop() const {
+  return loop;
+}
+
 namespace _ {  // private
 
 #if !KJ_NO_EXCEPTIONS

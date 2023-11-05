@@ -1350,6 +1350,8 @@ public:
   //
   // This method may be removed in the future.
 
+  EventLoop& getLoop() const;
+
 private:
   EventLoop& loop;
   uint busyPollInterval = kj::maxValue;
